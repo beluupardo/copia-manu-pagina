@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   background-color: white;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -15,6 +16,7 @@ body .carrusel-fotos {
 
 body .navbar {
   background-color: #09095e;
+  width: 100%;
 }
 
 body .navbar .logo {
@@ -64,12 +66,37 @@ ul{
   font-size: 20px;
   text-transform: uppercase;
   margin-right: 3rem;
-
   
 }
   .banner{
     display: none;
   }
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .titulo-noticias{
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 10px
+  }
+  .foto-noticia{
+    width: 100%;
+  }
+  
+  .titulo{
+    font-size: 25px;
+    font-weight: 100;
+    margin-left: 20px;
+  }
+  .fecha{
+    margin-left: 20px;
+  }
+  .subtitulo {
+    margin-left: 20px;
+  }
+  
+
 /*# sourceMappingURL=main.css.map */
-
-
