@@ -61,14 +61,21 @@ body .nav {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: 10px;
+
 }
 
 .equipo{
   text-decoration: none;
-  font-size: 18px;
+  color: black;
+  font-size: 20px;
   text-transform: uppercase;
   margin-right: 1rem;
+  margin-top: 1rem;
   
+}
+.especial{
+  color: grey;
 }
   .banner{
     display: none;
@@ -79,16 +86,22 @@ body .nav {
     
   }
   .titulo-noticias{
-    font-size: 35px;
-    text-align: center;
-    border-bottom: #09095e 2px solid;
-    margin-bottom: 1rem;
+    font-size: 25px;
+    text-align:left;
+    margin-left: 1rem;
   }
   .titulo-noticias-texto{
     text-transform: uppercase;
   }
   .foto-noticia{
-    width: 100%;
+    width: 90%;
+    border-top: #e08d11 4px solid;
+    margin-left: 1.2rem;
+  }
+
+  .foto-noticia2{
+    width: 90%;
+    ;
   }
   
   .titulo{
