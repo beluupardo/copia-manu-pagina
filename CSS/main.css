@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color:linen;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
@@ -47,7 +47,7 @@ body .nav {
 }
 
 .navbar2 {
-  background-color: white;
+  background-color:linen;
   display: flex;
   flex-wrap: wrap;
 }
@@ -101,17 +101,33 @@ body .nav {
 
   .foto-noticia2{
     width: 90%;
-    margin-left: 1.2rem;
+    margin-left: 1.1rem;
     border: #e08d11 4px solid;
   }
-  .texto-noticia{
-    border: lightgrey 2x solid;
+  .texto-noticia {
+    border: lightgrey 2px solid;
+    background-color: white;
+    margin: auto;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    width: 89%;
+    border-radius: 5px;
+  }
+  .texto-noticia2{
+    border: lightgrey 2px solid;
+    background-color: white;
+    margin: auto;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    width: 91%;
+    border-radius: 5px;
   }
   .titulo{
     font-size: 25px;
     margin-left: 20px;
     margin-bottom: -0.5rem;
     font-weight: lighter;
+    color: rgb(26, 25, 25);
   }
   .fecha{
     margin-left: 20px;
@@ -121,6 +137,8 @@ body .nav {
   .subtitulo {
     margin-left: 20px;
     font-weight: lighter;
+    font-size: 15px;
+    color: rgb(26, 25, 25);
   }
 .tabla{
   width: 100%;
