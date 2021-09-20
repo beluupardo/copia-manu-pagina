@@ -24,7 +24,7 @@ body .navbar .logo {
   text-decoration: none;
   color: #7ee1ff;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-left: 20px;
   margin-top: 14px;
 }
@@ -68,7 +68,7 @@ body .nav {
 .equipo{
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-transform: uppercase;
   margin-right: 1rem;
   margin-top: 1rem;
@@ -85,18 +85,28 @@ body .nav {
     flex-wrap: wrap;
     
   }
+
   .titulo-noticias{
     font-size: 25px;
     text-align:left;
-    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: #e08d11 4px solid;
   }
   .titulo-noticias-texto{
     text-transform: uppercase;
+    margin-left: 5%;
   }
   .foto-noticia{
     width: 90%;
+    margin-left: 5%;
+  }
+  .border-orange{
     border-top: #e08d11 4px solid;
-    margin-left: 1.2rem;
+
   }
 
   .foto-noticia2{
@@ -180,3 +190,16 @@ body .nav {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+.manu-prueba-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.manu-prueba-image{
+  width: 40%;
+  height: auto;
+}
