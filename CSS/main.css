@@ -101,19 +101,26 @@ body .nav {
 
   .foto-noticia2{
     width: 90%;
-    ;
+    margin-left: 1.2rem;
+    border: #e08d11 4px solid;
   }
-  
+  .texto-noticia{
+    border: lightgrey 2x solid;
+  }
   .titulo{
     font-size: 25px;
-    font-weight: 100;
     margin-left: 20px;
+    margin-bottom: -0.5rem;
+    font-weight: lighter;
   }
   .fecha{
     margin-left: 20px;
+    font-weight: lighter;
+    margin-bottom: -0.5rem;
   }
   .subtitulo {
     margin-left: 20px;
+    font-weight: lighter;
   }
 .tabla{
   width: 100%;
