@@ -77,12 +77,13 @@ body .nav {
 .especial{
   color: grey;
 }
-  .banner{
-    display: none;
-  }
+
   .hero {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
     
   }
 
@@ -90,26 +91,25 @@ body .nav {
     font-size: 25px;
     text-align:left;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     width: 100%;
     display: flex;
     flex-direction: row;
     border-bottom: #e08d11 4px solid;
+
   }
   .titulo-noticias-texto{
     text-transform: uppercase;
     margin-left: 5%;
+    font-size: 2.5rem;
+    font-weight: bold;
   }
   .foto-noticia{
     width: 90%;
     margin-left: 5%;
   }
-  .border-orange{
-    border-top: #e08d11 4px solid;
 
-  }
-
-  .foto-noticia2{
+  .marconaranja{
     width: 90%;
     margin-left: 1.1rem;
     border: #e08d11 4px solid;
@@ -123,15 +123,7 @@ body .nav {
     width: 89%;
     border-radius: 5px;
   }
-  .texto-noticia2{
-    border: lightgrey 2px solid;
-    background-color: white;
-    margin: auto;
-    margin-top: -1rem;
-    margin-bottom: 1rem;
-    width: 91%;
-    border-radius: 5px;
-  }
+ 
   .titulo{
     font-size: 25px;
     margin-left: 20px;
@@ -139,10 +131,16 @@ body .nav {
     font-weight: lighter;
     color: rgb(26, 25, 25);
   }
+  .titulo-color{
+    color: red;
+  }
   .fecha{
     margin-left: 20px;
     font-weight: lighter;
     margin-bottom: -0.5rem;
+  }
+  .fecha-color{
+    color: orange;
   }
   .subtitulo {
     margin-left: 20px;
@@ -150,56 +148,120 @@ body .nav {
     font-size: 15px;
     color: rgb(26, 25, 25);
   }
-.tabla{
+
+.linea-archivos{
+  font-size: 1,5rem;
+  text-align: left;
   width: 100%;
-}
-.tabla2{
-  width: 100%;
-}
-
-
-.fila-tabla{
-  width: 100%;
-}
-
-.imagen-tabla{
-  width: 30px;
-  height: auto;
-}
-
-.instagram{
-  width: 100%;
-}
-.twitter{
-  width: 100%;
-}
-.facebook{
-  width: 100%;
-}
-
-@media (max-width: 600px){
-  .tabla {
-    display: none;
-  }
-  .tabla2 {
-    display: none;
-  }
-  .hero-2{
-    display: none;
-  }
-}
-
-/*# sourceMappingURL=main.css.map */
-
-
-.manu-prueba-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
+  border-bottom:#e08d11 4px solid;
+}
+.archivos{
+  text-transform: uppercase;
+  margin-left: 5%;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  margin-top: 1rem;
+}
+.final{
+  background-color: #09095e;
+  margin-top: 2rem;
+}
+.seguinos, .contacto-texto, .ubicacion{
+  color: orange;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 5%;
+  text-align:center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  
+}
+.instagram, .twitter, .facebook{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
 }
 
-.manu-prueba-image{
-  width: 40%;
-  height: auto;
+.contacto{
+  color: #e08d11;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  vertical-align: middle;
+
+}
+.listado-contacto, .mail{ 
+  list-style-type: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  vertical-align: middle;
+  margin-bottom: 1rem;
+}
+.lista{
+  margin-bottom: 0.8rem;
+  
+  
+}
+.mapa{
+  display: flex;
+  flex-direction: column;
+}
+.avenida {
+  color: white;
+  margin: auto;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+ margin-bottom: 1.5rem;
+}
+
+
+.tabla {
+  display: none;
+}
+   
+.tabla2 {
+  display: none;
+}
+
+.hero-2{
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .carrusel-fotos{
+    display: none;
+  }
+  .equipo{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+  }
+  .marconaranja {
+    width: 40%;
+
+  }
+  .dos {
+    width: 40%;
+  }
+  .final, .contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+ 
+
+
 }
