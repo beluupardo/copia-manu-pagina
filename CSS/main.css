@@ -29,6 +29,10 @@ body .navbar .logo {
   margin-top: 14px;
 }
 
+.barra-secundaria{
+  width: 100%;
+}
+
 body .conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,10 +54,12 @@ body .nav {
   background-color:linen;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 .conteiner2{
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .equipos{
@@ -85,6 +91,15 @@ body .nav {
     justify-content: space-around;
     width: 100%;
     
+  }
+
+  .mas-grande{
+    width: 100%;
+  }
+
+  .seccion-noticia{
+    min-width: 50%;
+    flex: 1;
   }
 
   .titulo-noticias{
@@ -169,16 +184,6 @@ body .nav {
   background-color: #09095e;
   margin-top: 2rem;
 }
-.seguinos, .contacto-texto, .ubicacion{
-  color: orange;
-  text-transform: uppercase;
-  font-size: 2rem;
-  margin: 5%;
-  text-align:center;
-  justify-content: center;
-  margin-bottom: 1rem;
-  
-}
 .instagram, .twitter, .facebook{
   width: 25%;
   display: flex;
@@ -235,6 +240,32 @@ body .nav {
 .hero-2{
   display: none;
 }
+
+
+.googlemaps{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.seguinos{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contacto-texto, .ubicacion{
+  color: orange;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 5%;
+  text-align:center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  
+}
+
 @media only screen and (min-width: 768px) {
   .carrusel-fotos{
     display: none;
@@ -255,6 +286,10 @@ body .nav {
   }
   .dos {
     width: 40%;
+  }
+  .seguinos {
+    display: flex;
+    flex-direction: row;
   }
   .final, .contacto {
     display: flex;
