@@ -2,22 +2,30 @@ body {
   background-color:linen;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
   width: 100%;
+  overflow-x: hidden;
 }
 
 body .carrusel-fotos {
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: none;
 }
 
 .image-carrousel{
-  width: 100%;
-  height: auto;
+  width: 4rem;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  cursor: pointer;
 }
 
 body .navbar {
   background-color: #09095e;
   width: 100%;
+  margin-top: none;
 }
 
 body .navbar .logo {
@@ -50,10 +58,12 @@ body .nav {
   background-color:linen;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 .conteiner2{
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .equipos{
@@ -62,7 +72,7 @@ body .nav {
   flex-direction: row;
   flex-wrap: wrap;
   margin-left: 10px;
-
+  width: 100%;
 }
 
 .equipo{
@@ -176,6 +186,8 @@ body .nav {
   margin: 5%;
   text-align:center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
   
 }
@@ -208,12 +220,28 @@ body .nav {
 }
 .lista{
   margin-bottom: 0.8rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   
-  
+}
+.lista::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-image: url(https://images.vexels.com/media/users/3/157890/isolated/preview/4f2c005416b7f48b3d6d09c5c6763d87-icono-de-circulo-de-marca-de-verificacion.png);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
 }
 .mapa{
   display: flex;
   flex-direction: column;
+}
+.googlemaps {
+  width: 80%;
+  margin-left: 10%;
 }
 .avenida {
   color: white;
@@ -223,22 +251,21 @@ body .nav {
  margin-bottom: 1.5rem;
 }
 
-
-.tabla {
-  display: none;
-}
-   
-.tabla2 {
-  display: none;
-}
-
-.hero-2{
-  display: none;
-}
+/* arrreglas las fotos de check de la lista para que se muevan en conjusto con la lista*/
+/*
 @media only screen and (min-width: 768px) {
   .carrusel-fotos{
-    display: none;
+    width: 100%;
+  } 
+  .image-carrousel{
+    width: 3rem;
+    height: 6rem;
+    object-fit:cover;
   }
+  .navbar2, .barra-secundaria, .conteiner2, .equipos{
+    width: 100%;
+  }
+ 
   .equipo{
     font-size: 1.25rem;
     margin-bottom: 1rem;
@@ -249,19 +276,177 @@ body .nav {
     flex-wrap: wrap;
     justify-content: space-around
   }
-  .marconaranja {
-    width: 40%;
+  .masgrande{
+    min-width: 100%;
+  }
+  .seccion-noticia{
+    min-width: 40%;
+    flex: 1;
+  }
 
+  .seguinos{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
   }
-  .dos {
-    width: 40%;
+  .follow {
+    text-align: center;
   }
-  .final, .contacto {
+  
+  }
+  .seguinos, .contacto {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
- 
+  .seguinos {
+    display: flex;
+    flex-direction: wrap; 
+  }
+  .instagram, .twitter, .facebook{
+    width: 100%;
+    align-items:baseline;
+  }
+  .lista::before {
+    content: "";
+    position: static;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://images.vexels.com/media/users/3/157890/isolated/preview/4f2c005416b7f48b3d6d09c5c6763d87-icono-de-circulo-de-marca-de-verificacion.png);
+    background-size: contain;
+    left: 6rem;
+    display: none;
+  }
 
 
+/* modificar las fotos de arriba, la parte de contactos y correr hasta la derecha la barra de arriba, ya puse width 100% en todas partes*/
+
+@media only screen and (min-width: 1024px) {
+  .carrusel-fotos{
+    width: 100%;
+  } 
+  .image-carrousel{
+    width: 4rem;
+    height: 6rem;
+    object-fit:cover;
+  }
+  .barra-menu {
+   display: none;
+  }
+  .navbar{
+    height: 4.3rem;
+  }
+ .logo {
+    font-size: 3rem;
+  /* no me toma los cambios de tamaño*/
+  }
+  body .nav {
+    display: block;
+  }
+  .barrap{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-around;
+    margin-right: 25%;
+    margin-left: -15%;
+
+    }
+  .barra{
+    color: orange;
+    font-size: 0.90rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align:center;
+    align-items: center;
+    -ms-flex-align: center;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .buscador{
+    list-style: none;
+    margin-left: 82%;
+    margin-top: -2rem;
+    overflow: hidden;
+  }
+  .buscador::before{
+    content: "";
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    background-image: url(https://tpng.net/download/800x800_87-872187_lupa-png.png);
+    background-size: contain;
+    color: black;
+    right: 15%;
+    margin-top: 0.2rem;
+  }
+  body .navbar, .navbar2, .conteiner2, .barra-secundaria, .equipos{
+    width: 100%;
+  }
+  
 }
+
+/*
+@media only screen and (min-width: 1250px) {
+  .carrusel-fotos{
+    width: 100%;
+  } 
+  .image-carrousel{
+    width: 5rem;
+    height: 4rem;
+    object-fit:cover;
+  }
+  .barrap{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-right: 25%;
+    margin-left: -45%;
+  
+    }
+  .barra{
+    color: orange;
+    font-size: 0.90rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align:center;
+    align-items: center;
+    -ms-flex-align: center;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .buscador{
+    list-style: none;
+    margin-left: 82%;
+    margin-top: -2rem;
+    overflow: hidden;
+  }
+  .buscador::before{
+    content: "";
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    background-image: url(https://tpng.net/download/800x800_87-872187_lupa-png.png);
+    background-size: contain;
+    color: black;
+    right: 13%;
+    margin-top: 0.2rem;
+  }
+  .final, .contacto, .mapa {
+    display: flex;
+    flex-direction: row;
+  }
+  .final{
+    display: flex;
+
+  }
+  .instagram, .facebook, .twitter{
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+}
+
