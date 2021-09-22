@@ -218,6 +218,10 @@ body .nav {
   vertical-align: middle;
   margin-bottom: 1rem;
 }
+.lista-container{
+  display: flex;
+  flex-direction: row;
+}
 .lista{
   margin-bottom: 0.8rem;
   align-items: center;
@@ -227,7 +231,6 @@ body .nav {
 }
 .lista::before {
   content: "";
-  position: absolute;
   height: 20px;
   width: 20px;
   background-image: url(https://images.vexels.com/media/users/3/157890/isolated/preview/4f2c005416b7f48b3d6d09c5c6763d87-icono-de-circulo-de-marca-de-verificacion.png);
