@@ -288,29 +288,47 @@ body .nav {
     flex: 1;
   }
 
-  .seguinos{
+  .final {
     display: flex;
-    flex-direction: row;
-    margin-left: 5%;
-  }
-  .follow {
-    text-align: center;
-  }
-  
-  
-  .seguinos, .contacto {
-    display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
   }
-  .seguinos {
+  .seguinos{
     display: flex;
-    flex-direction: wrap; 
+    flex-direction: column;
+    width: 45%;
+  }
+  .contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mapa{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .googlemaps{
+    width: 80%;
+  }
+  .final{
+    display: flex;
+
+  }
+  .redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
   }
   .instagram, .twitter, .facebook{
-    width: 100%;
-    align-items:baseline;
+    width: 7rem;
+  
   }
+
   .lista::before {
     content: "";
     position: static;
@@ -319,7 +337,6 @@ body .nav {
     background-image: url(https://images.vexels.com/media/users/3/157890/isolated/preview/4f2c005416b7f48b3d6d09c5c6763d87-icono-de-circulo-de-marca-de-verificacion.png);
     background-size: contain;
     left: 6rem;
-    display: none;
   }
 }
 
@@ -396,6 +413,42 @@ body .nav {
     display: flex;
     flex-direction: column;
   }
+  .final {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .seguinos{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  .contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mapa{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    overflow-x: hidden;
+  }
+  .final{
+    display: flex;
+  }
+  .redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  .instagram, .twitter, .facebook{
+    width: 7rem;
+  
+  }
   
 }
 
@@ -409,9 +462,7 @@ body .nav {
     height: 4rem;
     object-fit:cover;
   }
-  .barra-principal{
-    padding-right: 20%;
-  }
+  
   .barrap{
     display: flex;
     flex-direction: row;
@@ -435,22 +486,50 @@ body .nav {
     right: 10%;
     margin-top: 0.2rem;
   }
-  .final, .contacto, .mapa {
+  .final {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .seguinos{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+  }
+  .contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+  }
+  .mapa{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
   }
   .final{
     display: flex;
 
   }
-  .instagram, .facebook, .twitter{
-    width: 7rem;
+  .redes{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
+    width: 30rem;
+  }
+  .instagram, .twitter, .facebook{
+    width: 7rem;
   }
   .mapa{
     overflow-x: hidden;
+  }
+
+  .googlemaps {
+    width: 80%;
+    margin-left: 10%;
   }
 }
 
